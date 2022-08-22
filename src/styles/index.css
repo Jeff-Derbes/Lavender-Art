@@ -6,7 +6,7 @@
 :root {
   --color-primary: 20 20 20; /* Text, buttons, etc. */
   --color-contrast: 250 250 249; /* Backgrounds, borders, etc. */
-  --color-accent: 191 72 0; /* Labels like "On sale" */
+  --color-accent: 233 204 177; /* Labels like "On sale" */
   --font-size-fine: 0.75rem; /* text-xs */
   --font-size-copy: 1rem; /* text-base */
   --font-size-lead: 1.125rem; /* text-lg */
@@ -29,14 +29,14 @@
     --screen-height: 100lvh;
   }
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: 250 250 250;
     --color-contrast: 32 33 36;
     --color-accent: 235 86 40;
   }
-}
+} */
 
 @keyframes fadeInAnimation {
   0% {
