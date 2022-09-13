@@ -6,10 +6,9 @@ export default defineConfig({
     defaultLanguageCode: 'EN',
     storeDomain:
       // @ts-ignore
-      Oxygen?.env?.SHOPIFY_STORE_DOMAIN || 'lavender-art-dev.myshopify.com',
+      'lavender-art-dev.myshopify.com',
     storefrontToken:
       // @ts-ignore
-      Oxygen?.env?.SHOPIFY_STOREFRONT_API_PUBLIC_TOKEN ||
       '7161f740860a85543dd93efed6f9669b',
     storefrontApiVersion: '2022-07',
   },

@@ -3,106 +3,106 @@ const PLACEHOLDERS = {
   HEROS: [
     // primaryHero
     {
-      heading: {value: 'All Mountain All Season'},
+      heading: {value: 'Lavender Art'},
       byline: {
-        value: 'The All New Hydrogen Snowboard Exclusively From Shopify',
+        value: 'Handcrafted Jewelery',
       },
       cta: {value: 'Shop Now →'},
-      handle: 'freestyle',
+      handle: 'lavender art',
       spread: {
         reference: {
           mediaContentType: 'IMAGE',
-          alt: 'Tracks in the snow leading to a person on a mountain top with a red jacket contrasting to an epic blue horizon with a mountain range in the distance.',
+          alt: 'Cover image of a sign that reads "lavender art"',
           previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
+            url: '../assets/hero-image.jpeg',
           },
           id: 'gid://shopify/MediaImage/29259478466616',
           image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
+            url: '../assets/hero-image.jpeg',
             width: 2500,
             height: 3155,
           },
         },
       },
-      spreadSecondary: {
-        reference: {
-          mediaContentType: 'IMAGE',
-          alt: 'A snowboarder standing on a mountain top in choppy snow, shows off the back of his snowboard which reads Hydrogen in a cursive script.',
-          previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
-          },
-          id: 'gid://shopify/MediaImage/29259478499384',
-          image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
-            width: 2500,
-            height: 3155,
-          },
-        },
-      },
-      height: 'full',
-      top: true,
-      loading: 'eager',
+      // spreadSecondary: {
+      //   reference: {
+      //     mediaContentType: 'IMAGE',
+      //     alt: 'A snowboarder standing on a mountain top in choppy snow, shows off the back of his snowboard which reads Hydrogen in a cursive script.',
+      //     previewImage: {
+      //       url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
+      //     },
+      //     id: 'gid://shopify/MediaImage/29259478499384',
+      //     image: {
+      //       url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
+      //       width: 2500,
+      //       height: 3155,
+      //     },
+      //   },
+      // },
+      // height: 'full',
+      // top: true,
+      // loading: 'eager',
     },
     // secondaryHero
-    {
-      heading: {value: 'The Winter 2022 Collection'},
-      byline: {value: 'Just Dropped'},
-      cta: {value: 'Shop Now →'},
-      handle: 'winter-2022',
-      spread: {
-        reference: {
-          mediaContentType: 'IMAGE',
-          alt: 'Three young women in snowboarding attire embracing and laughing while snow falls around them',
-          previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Collection_Feature_Wide.jpg?v=1654902160',
-          },
-          id: 'gid://shopify/MediaImage/29259478302776',
-          image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Collection_Feature_Wide.jpg?v=1654902160',
-            width: 5000,
-            height: 2500,
-          },
-        },
-      },
-      spreadSecondary: null,
-    },
+    // {
+    //   heading: {value: 'The Winter 2022 Collection'},
+    //   byline: {value: 'Just Dropped'},
+    //   cta: {value: 'Shop Now →'},
+    //   handle: 'winter-2022',
+    //   spread: {
+    //     reference: {
+    //       mediaContentType: 'IMAGE',
+    //       alt: 'Three young women in snowboarding attire embracing and laughing while snow falls around them',
+    //       previewImage: {
+    //         url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Collection_Feature_Wide.jpg?v=1654902160',
+    //       },
+    //       id: 'gid://shopify/MediaImage/29259478302776',
+    //       image: {
+    //         url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Collection_Feature_Wide.jpg?v=1654902160',
+    //         width: 5000,
+    //         height: 2500,
+    //       },
+    //     },
+    //   },
+    //   spreadSecondary: null,
+    // },
     // tertiaryHero
-    {
-      heading: {value: 'From the Slopes to the Chalet'},
-      byline: null,
-      cta: {value: 'Shop Now →'},
-      handle: 'backcountry',
-      spread: {
-        reference: {
-          mediaContentType: 'IMAGE',
-          alt: 'A skier hikes up a mountain through the snow with skis over their shoulder.',
-          previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_1.jpg?v=1654902306',
-          },
-          id: 'gid://shopify/MediaImage/29259478368312',
-          image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_1.jpg?v=1654902306',
-            width: 2500,
-            height: 2500,
-          },
-        },
-      },
-      spreadSecondary: {
-        reference: {
-          mediaContentType: 'IMAGE',
-          alt: 'A snow covered lodge is illuminated by lights at night with a dark starry sky and mountain backdrop.',
-          previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_2.jpg?v=1654902306',
-          },
-          id: 'gid://shopify/MediaImage/29259478401080',
-          image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_2.jpg?v=1654902306',
-            width: 2500,
-            height: 2500,
-          },
-        },
-      },
-    },
+    // {
+    //   heading: {value: 'From the Slopes to the Chalet'},
+    //   byline: null,
+    //   cta: {value: 'Shop Now →'},
+    //   handle: 'backcountry',
+    //   spread: {
+    //     reference: {
+    //       mediaContentType: 'IMAGE',
+    //       alt: 'A skier hikes up a mountain through the snow with skis over their shoulder.',
+    //       previewImage: {
+    //         url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_1.jpg?v=1654902306',
+    //       },
+    //       id: 'gid://shopify/MediaImage/29259478368312',
+    //       image: {
+    //         url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_1.jpg?v=1654902306',
+    //         width: 2500,
+    //         height: 2500,
+    //       },
+    //     },
+    //   },
+    //   spreadSecondary: {
+    //     reference: {
+    //       mediaContentType: 'IMAGE',
+    //       alt: 'A snow covered lodge is illuminated by lights at night with a dark starry sky and mountain backdrop.',
+    //       previewImage: {
+    //         url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_2.jpg?v=1654902306',
+    //       },
+    //       id: 'gid://shopify/MediaImage/29259478401080',
+    //       image: {
+    //         url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_2.jpg?v=1654902306',
+    //         width: 2500,
+    //         height: 2500,
+    //       },
+    //     },
+    //   },
+    // },
   ],
   PRODUCT_INFO: [
     {
@@ -187,6 +187,7 @@ const PLACEHOLDERS = {
 
 export function getHeroPlaceholder(heros) {
   if (!heros?.length) return [];
+  console.log(heros);
 
   // when we pass a collection without metafields,
   // we merge it with placeholder data
