@@ -1,6 +1,6 @@
 {
-  "name": "test-store",
-  "description": "Demo store template for @shopify/hydrogen",
+  "name": "Lavender-Art",
+  "description": "Storefront made with hydrogen for Lavender Art",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
