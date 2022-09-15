@@ -1,7 +1,7 @@
 {
   "name": "Lavender-Art",
   "description": "Storefront made with hydrogen for Lavender Art",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "scripts": {
