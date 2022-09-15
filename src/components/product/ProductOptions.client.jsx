@@ -49,7 +49,6 @@ function OptionsGrid({values, name, handleChange}) {
   );
 }
 
-// TODO: De-dupe UI with CountrySelector
 function OptionsDropdown({values, name, handleChange}) {
   const [listboxOpen, setListboxOpen] = useState(false);
   const {selectedOptions} = useProductOptions();

@@ -1,12 +1,69 @@
 import {MediaFile} from '@shopify/hydrogen/client';
 import {ATTR_LOADING_EAGER} from '~/lib/const';
-
+import {Image} from '@shopify/hydrogen/client';
+import {useProductOptions} from '@shopify/hydrogen';
 /**
  * A client component that defines a media gallery for hosting images, 3D models, and videos of products
  */
-export function ProductGallery({media, className}) {
+export function ProductGallery({media, className, variants}) {
+  const {selectedOptions} = useProductOptions();
   if (!media.length) {
     return null;
+  }
+
+  if (variants.nodes.length > 1) {
+    return (
+      <div
+        className={`swimlane md:grid-flow-row hiddenScroll md:p-0 md:overflow-x-auto md:grid-cols-2 ${className}`}
+      >
+        {variants.nodes.map((v) => {
+          let data = {};
+          let mediaProps = {
+            width: 800,
+            widths: [400, 800, 1200, 1600, 2000, 2400],
+          };
+
+          const style = [
+            'md:col-span-2',
+            'aspect-square snap-center card-image bg-white dark:bg-contrast/10 w-mobileGallery md:w-full',
+          ].join(' ');
+
+          if (
+            v.title === selectedOptions.Style ||
+            v.title === selectedOptions.Color ||
+            v.title === selectedOptions.Size
+          ) {
+            data = {
+              image: {
+                ...v.image,
+                altText: v.altText || 'Product Image',
+              },
+            };
+
+            return (
+              <div
+                className={style}
+                // @ts-ignore
+                key={data.image.id}
+              >
+                <Image
+                  tabIndex="0"
+                  className={`w-full h-full aspect-square fadeIn object-cover`}
+                  data={data.image}
+                  sizes={'(min-width: 64em) 60vw, (min-width: 48em) 50vw, 90vw'}
+                  // @ts-ignore
+                  options={{
+                    crop: 'center',
+                    scale: 2,
+                  }}
+                  {...mediaProps}
+                />
+              </div>
+            );
+          }
+        })}
+      </div>
+    );
   }
 
   return (

@@ -65,6 +65,7 @@ export default function Product() {
           <div className="grid items-start md:gap-6 lg:gap-20 md:grid-cols-2 lg:grid-cols-3">
             <ProductGallery
               media={media.nodes}
+              variants={product.variants}
               className="w-screen md:w-full lg:col-span-2"
             />
             <div className="sticky md:-mb-nav md:top-nav md:-translate-y-nav md:h-screen md:pt-nav hiddenScroll md:overflow-y-scroll">
