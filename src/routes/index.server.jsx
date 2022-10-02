@@ -129,7 +129,7 @@ const HOMEPAGE_CONTENT_QUERY = gql`
         }
       }
     }
-    featuredProducts: products(first: 12) {
+    featuredProducts: products(first: 12, sortKey: CREATED_AT, reverse: true) {
       nodes {
         ...ProductCard
       }
