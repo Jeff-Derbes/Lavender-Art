@@ -13,6 +13,7 @@ import {PRODUCT_CARD_FRAGMENT} from '~/lib/fragments';
 
 import {FeaturedCollections, Hero} from '~/components';
 import {Layout, ProductSwimlane} from '~/components/index.server';
+import PageBanner from '../components/PageBanner';
 
 export default function Homepage() {
   useServerAnalytics({
@@ -54,6 +55,7 @@ function HomepageContent() {
 
   return (
     <>
+      <PageBanner />
       <Hero />
       <ProductSwimlane
         data={featuredProducts.nodes}
@@ -113,6 +115,7 @@ const HOMEPAGE_CONTENT_QUERY = gql`
       first: 3
       query: "collection_type:smart"
       sortKey: UPDATED_AT
+      reverse: true
     ) {
       nodes {
         id
