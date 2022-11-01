@@ -55,7 +55,6 @@ function HomepageContent() {
 
   return (
     <>
-      <PageBanner />
       <Hero />
       <ProductSwimlane
         data={featuredProducts.nodes}
